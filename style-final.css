@@ -242,6 +242,10 @@ nav {
   .mobile-house-rules {
     display: none;
   }
+
+  .mobile-house-rules li {
+    max-width: 800px;
+  }
   
   .house-rules h1 {
     padding-left: 17px;
@@ -401,8 +405,7 @@ nav {
   /* ========== TYPOGRAPHY ========== */
   i{
       color:rgb(173, 168, 168);
-      padding-right: 15px;
-      width: 20px;
+      width: 10px;
       margin-right: 20px;
   }
   
@@ -517,7 +520,6 @@ nav {
      /* ====== NAVIGATION BAR (Mobile) ====== */
         .nav-bar {
             flex-direction: column;
-            align-content: center;
             margin-bottom: 30px;
             height: 200px;
             width: 100%;
@@ -527,10 +529,14 @@ nav {
             font-size: 1rem;
             max-width: 300px;
             min-height: 60px;
-            margin: 0;
+            margin: 0 auto;
             width: 100%;
             max-width: 600px;
             overflow: scroll;
+          }
+
+          .nav-bar li {
+            margin: 0 auto;
           }
 
           #logo {
@@ -575,6 +581,10 @@ nav {
       .container2 {
         width: 80%;
         flex-direction: column;
+      }
+
+      .container1 h1,
+      .container2 h1 {
         text-align: center;
       }
 
@@ -589,7 +599,12 @@ nav {
         padding: 20px;
       }
       
+      h1 i {
+
+      }
+      /* ====== CHECK-IN-OUT (Mobile) ====== */
       .check-in-out {
+        text-align: center;
           box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
           border-radius: 20px;
           padding-top: 20px;
@@ -598,7 +613,8 @@ nav {
       
        /* ====== WIFI SECTION (Mobile) ====== */
       .container1 .wifi {
-         box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
+          text-align: center;
+          box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
           border-radius: 20px;
           padding-top: 20px;
           min-width: 100%;
@@ -614,8 +630,13 @@ nav {
       }
       
     
-      /* ====== RECOMMENDATIONS SECTION (Mobile) ====== */
-      .rec {
+      /* ====== RECOMMENDATIONS - EMERGENCY SECTION (Mobile) ====== */
+      .rec, .emergency-contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-direction: center;
         box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
         border-radius: 20px;
         padding-top: 20px;
@@ -625,41 +646,17 @@ nav {
       .rec .hidden-link {
         display: none;
       }
-  
-      .rec ul {
+      
+      /* ====== TRANSPORTS (Mobile) ====== */
+      .transports {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
-        padding: 0;
-        margin: 1rem auto 2rem auto;
-        list-style: none;
+        align-content: center;
+        flex-direction: center;
       }
-    
-      .rec ul li {
-        display: flex;
-        align-items: center;
-        width: 110px;
-        margin: 0 auto;
-      }
-    
-      .rec ul li i {
-        width: 25px; 
-        text-align: center;
-        margin-right: 10px;
-        font-size: 1.2rem;
-        flex-shrink: 0;
-      }
-    
-      .rec ul li a {
-        display: inline-block;
-        text-align: left;
-        font-weight: 600;
-        text-decoration: underline;
-        font-size: 1.1rem;
-        white-space: nowrap;
-      }
-      
+
+
       /* ====== TRANSPORTS (Mobile) ====== */
       .transports {
         box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
@@ -667,16 +664,7 @@ nav {
         padding-top: 20px;
         padding-bottom: 5px;
       }
-      
 
-      /* ====== EMERGENCY CONTACTS (Mobile) ====== */
-      .emergency-contacts {
-        box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
-        border-radius: 20px;
-        padding-top: 20px;
-        padding-bottom: 5px;
-      }
-      
       /* ====== HOUSE RULES MOBILE ====== */
       .house-rules {
         display: none;
@@ -705,7 +693,8 @@ nav {
       .mobile-house-rules ul {
         list-style-type: none;
       }
-  
+      
+      
       span{
         font-size: 1.3rem;
         border-bottom: none;
