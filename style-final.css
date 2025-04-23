@@ -409,6 +409,12 @@ nav {
       margin-right: 20px;
   }
   
+  .check-in-out i,
+  .wifi i {
+    padding-right: 20px;
+  }
+
+
   h1 i{
     font-size: 18px;
   }
@@ -420,17 +426,17 @@ nav {
       border-bottom: 2px solid #e0e0e0;
       padding-bottom: 0.5rem;
       font-weight: 400;
+      width: 100%;
     }
 
     .notice{
+        display: flex;
         color: rgb(255, 0, 0);
         padding-left: 17px;
-        padding-bottom: 10px;
-        margin-bottom: 15px;
         border-bottom: 2px solid #e0e0e0;
         font-weight: 400;
         border: none;
-        margin-bottom: 30px;
+        padding-bottom: 0;
       }
 
     ul li {
@@ -460,37 +466,32 @@ nav {
         background-color: #fafafa;
         margin-top: 30px;
         }
-    
-        
-      .contact {
-        display: flex;
-        justify-content: space-between;
-      }
-    
-    
+  
       .foot .phone-icon {
         font-size: 1.3rem;      
         color: #4a4a4a;       
-        margin-right: 0.5rem;   
+        margin-right: 1rem;   
         vertical-align: middle;
       }
     
       .whatsapp-icon {
         font-size: 1.3rem;     
         color: #25D366;        
-        margin-right: 0.5rem; 
+        margin-right: 1rem; 
         vertical-align: middle;
+        padding-left: 9.5px;
+      }
+
+      .footer-contacts .app {
+        display: inline-block;
+        margin-top: 20px;
+        padding-left: 9.5px;
       }
       
      
       .footer-contacts a {
         color: #5a5aff;
         font-weight: 400;
-      }
-    
-      .footer-contacts .app {
-        display: inline-block;
-        margin-top: 20px;
       }
       
       .ig {
@@ -599,9 +600,6 @@ nav {
         padding: 20px;
       }
       
-      h1 i {
-
-      }
       /* ====== CHECK-IN-OUT (Mobile) ====== */
       .check-in-out {
         text-align: center;
@@ -611,13 +609,26 @@ nav {
           padding-bottom: 5px;
       }
       
+      .check-in-out li {
+        font-size: 1.1rem;
+      }
+
        /* ====== WIFI SECTION (Mobile) ====== */
       .container1 .wifi {
           text-align: center;
           box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
           border-radius: 20px;
           padding-top: 20px;
+          padding-bottom: 5px;
           min-width: 100%;
+      }
+
+      .wifi h1 {
+        padding-right: 25px;
+      }
+
+      .wifi li {
+        font-size: 1.1rem;
       }
        
        /* ====== IFRAME MAP (Mobile) ====== */
@@ -643,6 +654,10 @@ nav {
         padding-bottom: 5px;
       }
 
+      .rec li {
+        font-size: 1.1rem;
+      }
+
       .rec .hidden-link {
         display: none;
       }
@@ -652,17 +667,18 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         align-content: center;
         flex-direction: center;
-      }
-
-
-      /* ====== TRANSPORTS (Mobile) ====== */
-      .transports {
         box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
         border-radius: 20px;
+        padding: 0 5px;
         padding-top: 20px;
         padding-bottom: 5px;
+      }
+
+      .transports li {
+        font-size: 1.1rem;
       }
 
       /* ====== HOUSE RULES MOBILE ====== */
@@ -676,29 +692,27 @@ nav {
         align-items: center;
         text-align: center;
         justify-content: center;
+        background-color: #fffbf4;
         margin: 0 auto;
-        width: 80%;
         order: 5;
         margin-top: 40px; 
-        padding: 20px 20px;
+        padding: 10px 10px;
         border-radius: 30px;
       }
   
       .mobile-house-rules h1 {
         width: 100%;
         border-bottom: 2px solid #e0e0e0;
-      
       }
   
       .mobile-house-rules ul {
         list-style-type: none;
+        font-size: 1.1rem;
       }
       
       
       span{
         font-size: 1.3rem;
-        border-bottom: none;
-       
         color: #e43232;
         font-weight: 550;
       }
@@ -760,9 +774,10 @@ nav {
   
       .foot .footer-contacts {
         order: 1;
+        margin-bottom: 15px;
       }
   
-      .foot. .footer-social {
+      .foot .footer-social {
         order: 2;
       }
       
@@ -770,6 +785,7 @@ nav {
         display: flex;
         margin-top: 10px;
         order: 3;
+        overflow: hidden;
       }
   
       .foot .footer-brand {
