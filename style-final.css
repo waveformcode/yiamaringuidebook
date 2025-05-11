@@ -45,6 +45,7 @@ nav {
     list-style: none;
     flex-wrap: nowrap;
     white-space: nowrap;
+    overflow: scroll;
   }
   
   nav li {
