@@ -410,6 +410,10 @@ nav {
    width: 150px;
  }
 
+ .cultural {
+  height: 530px;
+ }
+
   /* ========== TYPOGRAPHY ========== */
   i{
       color:rgb(173, 168, 168);
@@ -418,7 +422,7 @@ nav {
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     text-align: center;
     margin-top: 5px;
   }
