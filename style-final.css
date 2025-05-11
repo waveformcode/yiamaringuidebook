@@ -415,6 +415,12 @@ nav {
       margin-right: 20px;
   }
 
+  h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+
   .whatsapp-icon-top {
     color: #25D366;
     font-size: 20px;
