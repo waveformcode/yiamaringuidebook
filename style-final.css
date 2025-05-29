@@ -1,143 +1,141 @@
 /* ========== GLOBAL RESET ========== */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    line-height: 1.5;
-    letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  letter-spacing: normal;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 /* ========== BODY ========== */
-body{
-    font-family: "Tinos", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.05rem;
-    background-color: rgba(255, 255, 255, 0.54);
-    font-family: "Tinos", serif;
-    font-weight: 400;
-    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-    background-color: #fffdf7;
-    background-repeat: repeat;
+body {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.05rem;
+  background-color: rgba(255, 255, 255, 0.54);
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  background-color: #fffdf7;
+  background-repeat: repeat;
 }
 
 /* ========== NAVIGATION ========== */
 nav {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 50px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  .hidden-link {
-    display: none;
-  }
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
 
-  nav ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    overflow: scroll;
-  }
-  
-  nav li {
-    padding: 20px;
-    justify-content: space-between;
-  }
-  
-  nav li a {
-    text-decoration: none;
-    background-color: #f8f8f5;
-    padding: 10px;
-    border-radius: 30px;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-  }
-  
-  nav li a:hover {
-    background-color: #2a2ab5;
-    color: #fff;
-  }
-  
-  #logo {
-    max-width: 85px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 100px;
-    margin: 0 20px;
-  }
+.hidden-link {
+  display: none;
+}
 
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: scroll;
+}
 
-  /* ========== WELCOME MESSAGE ========== */
-  .container0 {
-    margin-top: 30px;
-  }
-  
-  .welcome-message {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      letter-spacing: normal;
-      max-width: 600px;
-      height: 100%;
-      margin: 0 auto;
-      padding: 20px 20px;
-      border-radius: 30px;
-      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
-   } 
-  
-   .welcome-p {
-    font-size: 20px;
-    max-width: 700px;
-    text-align: center;
-    border-radius: 40px;
-    line-height: 1.6;
-    letter-spacing: 0.07rem;
-  }
-  
-  .welcome-p-mobile {
-    display: none;
-  }
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 3s ease-out forwards;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+nav li {
+  padding: 20px;
+  justify-content: space-between;
+}
 
+nav li a {
+  text-decoration: none;
+  background-color: #f8f8f5;
+  padding: 10px;
+  border-radius: 30px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
 
-   /* ========== INTRO ========== */
-  .intro {
-    display: flex;
-    margin: 0 auto;
-    margin-top: 40px;
-    padding: 20px 20px;
-    width: 100%;
-    max-width: 550px;
-    height: 100%;
-    border-radius: 30px;
-    text-align: center;
-    align-items: center;
-    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-    background-color: #fffdf7;
-    background-repeat: repeat;
-    box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
-    font-size: 1.2rem;
-    font-family: 'Work Sans', sans-serif;
+nav li a:hover {
+  background-color: #2a2ab5;
+  color: #fff;
+}
+
+#logo {
+  max-width: 85px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 100px;
+  margin: 0 20px;
+}
+
+/* ========== WELCOME MESSAGE ========== */
+.container0 {
+  margin-top: 30px;
+}
+
+.welcome-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: normal;
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  border-radius: 30px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-p {
+  font-size: 20px;
+  max-width: 700px;
+  text-align: center;
+  border-radius: 40px;
+  line-height: 1.6;
+  letter-spacing: 0.07rem;
+}
+
+.welcome-p-mobile {
+  display: none;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 3s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== INTRO ========== */
+.intro {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px 20px;
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  border-radius: 30px;
+  text-align: center;
+  align-items: center;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  background-color: #fffdf7;
+  background-repeat: repeat;
+  box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
 }
 
 .text-mobile {
@@ -145,694 +143,698 @@ nav {
 }
 
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 3s ease-out forwards;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-
-  /* ========== CONTAINERS ========== */
-  .container, 
-  .container1, 
-  .container2 {
-      max-width: 800px;
-      padding: 2rem 1rem;
-      margin: 0 auto;
-      border-radius: 30px;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-  }
-  
-   .container1 {
-      display:flex;
-      justify-content: space-between;
-      margin-top: 40px;
-   }
-
-   .container2{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 3s ease-out forwards;
 }
 
-   .container-wrap {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    place-items: center;
-    gap: 30px;
-    padding: 30px;
-    width: 100%;
-    height: auto;
-    gap: 10px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-left: 30px;
-    padding-right: 30px;
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-  
+
+/* ========== CONTAINERS ========== */
+.container,
+.container1,
+.container2 {
+  max-width: 800px;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  place-items: center;
+  gap: 30px;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+  gap: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 /* ========== SECTIONS ========== */
-   .check-in-out li,
-   .emergency-contacts li,
-   .house-rules li,
-   .rec li,
-   .transports li,
-   .contact li {
-    list-style-type: none;
-  }
-  
-   /* Top Left */
-   .wifi {
-    margin-top: 50px;
-    max-width: 300px;
-  }
-  
-  .wifi li{
-    list-style-type: none;
-  }
-  
-  /* Top Right, Location */
-   .location{
-      display: inline-block;
-      align-items: right;
-   }
-  
-   iframe{
-      width: 300px;
-      height: 250px;
-      border-radius: 15px;
-   }
-  
-  
-  /* Middle Left, House Rules */
-  .house-rules {
+.check-in-out li,
+.emergency-contacts li,
+.house-rules li,
+.rec li,
+.transports li,
+.contact li {
+  list-style-type: none;
+}
+
+/* Top Left */
+.wifi {
+  margin-top: 50px;
+  max-width: 300px;
+}
+
+.wifi li {
+  list-style-type: none;
+}
+
+/* Top Right, Location */
+.location {
+  display: inline-block;
+  align-items: right;
+}
+
+iframe {
+  width: 300px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+/* Middle Left, House Rules */
+.house-rules {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fffbf4;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  font-size: normal;
+  line-height: 1.6;
+}
+
+.mobile-house-rules {
+  display: none;
+}
+
+.mobile-house-rules li {
+  max-width: 800px;
+}
+
+.house-rules h1 {
+  padding-left: 17px;
+}
+.house-rules p {
+  font-size: 2rem;
+}
+.house-rules ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.notice {
+  color: rgb(255, 0, 0);
+  padding-left: 17px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+  font-weight: 400;
+}
+
+/* Recommedations */
+.rec {
+  padding-top: 35px;
+}
+
+.rec a,
+.contact a {
+  color: #6678b9;
+}
+
+.rec a:hover {
+  font-size: large;
+}
+
+/* Transports */
+.transports {
+  margin-top: 50px;
+}
+
+.transports a,
+.emergency-contacts a {
+  color: #5a5aff;
+  font-weight: 400;
+}
+
+.transports a:hover {
+  font-size: large;
+}
+
+/* Emergency Contacts */
+.emergency-contacts {
+  margin-top: 50px;
+}
+
+.activities-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 1px rgba(0, 0, 1, 0.5);
+  border-radius: 30px;
+  padding: 20px 20px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 320px;
+  height: 560px !important;
+  font-family: "Work Sans", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 1px rgba(0, 0, 1, 0.5);
+  border-radius: 30px;
+  padding: 20px 20px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 320px;
+  height: 510px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-img {
+  width: 100%;
+  max-width: 280px;
+  height: 250px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.card .info {
+  max-width: 280px;
+  height: auto;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 1rem;
+  line-height: 1.3;
+  letter-spacing: 0.05rem;
+  margin-bottom: 20px;
+}
+
+.map-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: auto;
+  border-radius: 30px;
+  background-color: rgba(225, 232, 229, 0.641);
+  letter-spacing: 0.07rem;
+  font-weight: 450;
+  color: rgb(55, 55, 195);
+  width: 140px;
+  padding: 10px 10px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-family: "Fredoka", sans-serif;
+}
+
+.map-link:hover {
+  background-color: rgb(42, 42, 181);
+  color: rgb(255, 252, 252);
+  width: 150px;
+}
+
+.wiki-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: rgba(225, 232, 229, 0.641);
+  letter-spacing: 0.07rem;
+  font-weight: 450;
+  color: rgb(55, 55, 195);
+  width: 140px;
+  padding: 10px 10px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-family: "Fredoka", sans-serif;
+}
+
+.wiki-link:hover {
+  background-color: rgb(42, 42, 181);
+  color: rgb(255, 252, 252);
+  width: 150px;
+}
+
+.cultural {
+  height: 530px;
+}
+
+/* ========== TYPOGRAPHY ========== */
+i {
+  color: rgb(173, 168, 168);
+  width: 10px;
+  margin-right: 20px;
+}
+
+h3 {
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.whatsapp-icon-top {
+  color: #25d366;
+  font-size: 20px;
+}
+
+.check-in-out i,
+.wifi i,
+.contact i {
+  padding-right: 20px;
+}
+
+h1 i {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+  width: 100%;
+}
+
+.notice {
+  display: flex;
+  color: rgb(255, 0, 0);
+  padding-left: 17px;
+  border-bottom: 2px solid #e0e0e0;
+  font-weight: 400;
+  border: none;
+  padding-bottom: 0;
+}
+
+ul li {
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+a {
+  color: rgb(146, 126, 86);
+  font-weight: 700;
+}
+
+.guidebook:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+/* ========== WEATHER ========== */
+
+/* ========== UP ARROW ========== */
+.back-to-top {
+  position: fixed;
+  left: 98%;
+  top: 90%;
+}
+
+.back-to-top img {
+  width: 30px;
+  height: 30px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ========== FOOTER ========== */
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
+  margin-top: 30px;
+}
+
+.foot .phone-icon {
+  font-size: 1.3rem;
+  color: #4a4a4a;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.whatsapp-icon {
+  font-size: 1.3rem;
+  color: #25d366;
+  margin-right: 1rem;
+  vertical-align: middle;
+  padding-left: 9.5px;
+}
+
+.footer-contacts .app {
+  display: inline-block;
+  margin-top: 20px;
+  padding-left: 9.5px;
+}
+
+.footer-contacts a {
+  color: #5a5aff;
+  font-weight: 400;
+}
+
+.brand-name {
+  display: inline-block;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+  /* ====== NAVIGATION BAR (Mobile) ====== */
+  .nav-bar {
+    flex-direction: column;
+    margin-bottom: 30px;
+    height: 200px;
     width: 100%;
-    max-width: 400px;
-    background-color: #fffbf4;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-    font-size: normal;
-    line-height: 1.6;
   }
-  
-  .mobile-house-rules {
+
+  .nav-bar ul {
+    font-size: 1rem;
+    min-height: 60px;
+    margin: 0 auto;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .nav-bar li {
+    margin: 0 auto;
+  }
+
+  #logo {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* ====== WELCOME SECTION (Mobile) ====== */
+  .welcome-message {
     display: none;
   }
 
-  .mobile-house-rules li {
-    max-width: 800px;
+  .welcome-p-mobile {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px 20px;
+    width: 80%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
   }
-  
-  .house-rules h1 {
-    padding-left: 17px;
+
+  h1 {
+    font-size: 1.3rem;
+    border-bottom: none;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    font-weight: 550;
   }
-  .house-rules p{
-    font-size: 2rem;
+
+  /* ====== CONTAINERS (Mobile) ====== */
+  .container1,
+  .container2 {
+    width: 80%;
+    flex-direction: column;
   }
-  .house-rules ul {
+
+  .container1 h1,
+  .container2 h1 {
+    text-align: center;
+  }
+
+  .container2 {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    padding-left: 1.2rem;
+  }
+
+  .container-wrap {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  /* ====== CHECK-IN-OUT (Mobile) ====== */
+  .check-in-out {
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  .check-in-out li {
     font-size: 1.1rem;
   }
-  
-  .notice{
-    color: rgb(255, 0, 0);
-    padding-left: 17px;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #e0e0e0;
-    font-weight: 400;
-  }
-  
-  /* Middle Right */
 
-  /* CONTACT */
- 
+  /* ====== WIFI SECTION (Mobile) ====== */
+  .container1 .wifi {
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    min-width: 100%;
+  }
 
-  /* Recommedations */
-  .rec {
-    padding-top: 35px;
+  .wifi h1 {
+    padding-right: 25px;
   }
-  
-  .rec a,
-  .contact a {
-    color: #6678b9;
+
+  .wifi li {
+    font-size: 1.1rem;
   }
-  
-  .rec a:hover {
-    font-size: large;
+
+  /* ====== IFRAME MAP (Mobile) ====== */
+  .location {
+    margin-top: 40px;
   }
-  
-  /* Transports */
-  .transports {
-      margin-top: 50px;
+
+  iframe {
+    width: 100%;
   }
-  
-  .transports a,
-  .emergency-contacts a {
-    color: #5a5aff;
-    font-weight: 400;
-  }
-  
-  .transports a:hover{
-    font-size: large;
-  }
-  
-  /* Emergency Contacts */
+
+  /* ====== RECOMMENDATIONS - EMERGENCY SECTION (Mobile) ====== */
+  .rec,
   .emergency-contacts {
-      margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-direction: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
   }
-  
+
+  .rec li {
+    font-size: 1.1rem;
+  }
+
+  .rec .hidden-link {
+    display: none;
+  }
+
+  /* ====== TRANSPORTS (Mobile) ====== */
+  .transports {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    flex-direction: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
+    border-radius: 20px;
+    padding: 0 5px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  .transports li {
+    font-size: 1.1rem;
+  }
+
+  /* ====== CONTACT TOP ====== */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    flex-direction: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
+    border-radius: 20px;
+    padding: 0 5px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+  }
+
+  .fa-phone {
+    margin-right: 10px !important;
+  }
+  .whatsapp-icon-top {
+    margin-right: 5px;
+  }
+
+  /* ====== HOUSE RULES MOBILE ====== */
+  .house-rules {
+    display: none;
+  }
+
+  .mobile-house-rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #fffbf4;
+    margin: 0 auto;
+    order: 5;
+    margin-top: 40px;
+    padding: 10px 10px;
+    border-radius: 30px;
+  }
+
+  .mobile-house-rules h1 {
+    width: 100%;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  .mobile-house-rules ul {
+    list-style-type: none;
+    font-size: 1.1rem;
+  }
+
+  span {
+    font-size: 1.3rem;
+    color: #e43232;
+    font-weight: 550;
+  }
+
+  /* ====== CARDS (Mobile) ====== */
+  .card {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
 
   .activities-card {
+    width: 90%;
+    max-height: 500px;
+    margin: 20px auto;
+  }
+
+  .card-img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .intro {
+    display: none;
+  }
+
+  .text-mobile {
     display: flex;
-     flex-direction: column;
-     box-shadow: 0px 0px 1px rgba(0, 0, 1, 0.5);
-     border-radius: 30px;
-     padding: 20px 20px;
-     margin-top: 30px;
-     width: 100%;
-     max-width: 320px;
-     height: 560px !important;;
-     font-family: 'Work Sans', sans-serif;
- }
- 
- .card {
-     display: flex;
-     flex-direction: column;
-     box-shadow: 0px 0px 1px rgba(0, 0, 1, 0.5);
-     border-radius: 30px;
-     padding: 20px 20px;
-     margin-top: 30px;
-     width: 100%;
-     max-width: 320px;
-     height: 510px;
-     font-family: 'Work Sans', sans-serif;
- }
- 
- .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    transition: background-color 0.3s, transform 0.2s;
- }
- 
- .card-img {
-   width: 100%;
-   max-width: 280px;
-   height: 250px;
-   border-radius: 30px;
-   object-fit: cover;     
- }
- 
- .card .info{
-     max-width: 280px;
-     height: auto;
-     text-align: center;
-     padding-top: 15px;
-     font-size: 1rem;
-     line-height: 1.3;
-     letter-spacing: 0.05rem;
-     margin-bottom: 20px;
- }
- 
-  .map-link {
-     display: block;
-     text-align: center;
-     text-decoration: none;
-     margin: 0 auto;
-     margin-top: auto;
-     border-radius: 30px;
-     background-color: rgba(225, 232, 229, 0.641);
-     letter-spacing: 0.07rem;
-     font-weight: 450;
-     color: rgb(55, 55, 195);
-     width: 140px;
-     padding: 10px 10px;
-     transition: all 0.3s ease;
-     font-size: 0.9rem;
-     font-family: 'Fredoka', sans-serif;
- }
- 
- .map-link:hover {
-   background-color:rgb(42, 42, 181);
-   color: rgb(255, 252, 252);
-   width: 150px;
- }
- 
- .wiki-link {
-    display: block;
-     text-align: center;
-     text-decoration: none;
-     margin: 0 auto;
-     border-radius: 30px;
-     background-color: rgba(225, 232, 229, 0.641);
-     letter-spacing: 0.07rem;
-     font-weight: 450;
-     color: rgb(55, 55, 195);
-     width: 140px;
-     padding: 10px 10px;
-     transition: all 0.3s ease;
-     font-size: 0.9rem;
-     font-family: 'Fredoka', sans-serif;
- }
- 
- .wiki-link:hover {
-   background-color:rgb(42, 42, 181);
-   color: rgb(255, 252, 252);
-   width: 150px;
- }
-
- .cultural {
-  height: 530px;
- }
-
-  /* ========== TYPOGRAPHY ========== */
-  i{
-      color:rgb(173, 168, 168);
-      width: 10px;
-      margin-right: 20px;
-  }
-
-  h3 {
-    font-size: 0.95rem;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px 20px;
+    width: 75%;
+    height: auto;
+    border-radius: 30px;
     text-align: center;
-    margin-top: 5px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
+    font-size: 1.1rem;
+    font-family: "Work Sans", sans-serif;
   }
 
-  .whatsapp-icon-top {
-    color: #25D366;
-    font-size: 20px;
-  }
-  
-  .check-in-out i,
-  .wifi i,
-  .contact i {
-    padding-right: 20px;
+  .info {
+    font-size: 1rem;
   }
 
-
-  h1 i{
-    font-size: 18px;
+  .map-link .wiki-link {
+    margin: 0;
+    padding: 0;
   }
-  
-  h1 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-      color: #333;
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 0.5rem;
-      font-weight: 400;
-      width: 100%;
-    }
 
-    .notice{
-        display: flex;
-        color: rgb(255, 0, 0);
-        padding-left: 17px;
-        border-bottom: 2px solid #e0e0e0;
-        font-weight: 400;
-        border: none;
-        padding-bottom: 0;
-      }
+  /* ====== FOOTER (Mobile) ====== */
+  .foot {
+    display: flex;
+    flex-direction: column;
+  }
 
-    ul li {
-        line-height: 1.6;
-        margin-bottom: 0.75rem;
-      }
-    
-      a {
-        color:rgb(146, 126, 86);
-        font-weight: 700;
-      }
-      
-      .guidebook:nth-of-type(even) {
-        background-color: #f9f9f9;
-      }
+  .footer-contacts {
+    order: 1;
+    margin-bottom: 15px;
+  }
 
-      /* ========== FOOTER ========== */
-      .foot {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        font-family: 'Poppins', sans-serif;
-        padding: 20px;
-        border-top: 1px solid rgba(0,0,0,0.05);
-        font-family: 'Montserrat', sans-serif;
-        background-color: #fafafa;
-        margin-top: 30px;
-        }
-  
-      .foot .phone-icon {
-        font-size: 1.3rem;      
-        color: #4a4a4a;       
-        margin-right: 1rem;   
-        vertical-align: middle;
-      }
-    
-      .whatsapp-icon {
-        font-size: 1.3rem;     
-        color: #25D366;        
-        margin-right: 1rem; 
-        vertical-align: middle;
-        padding-left: 9.5px;
-      }
+  .footer-social {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin-bottom: 19px;
+  }
 
-      .footer-contacts .app {
-        display: inline-block;
-        margin-top: 20px;
-        padding-left: 9.5px;
-      }
-       
-      .footer-contacts a {
-        color: #5a5aff;
-        font-weight: 400;
-      }
-    
-     .brand-name {
-        display: inline-block;
-        font-weight: 600;
-        color: #333;
-        text-decoration: none;
-        letter-spacing: 0.5px;
-        transition: color 0.3s ease;
-        margin-top: 1rem;
-        font-size: 0.9rem;
-      }
-      
+  .app {
+    margin-left: 3px;
+  }
 
-      /* ========== MEDIA QUERIES ========== */
-      @media (max-width: 768px) {
+  .footer-brand {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 765px;
+    margin: 0 auto;
+  }
 
-     /* ====== NAVIGATION BAR (Mobile) ====== */
-        .nav-bar {
-            flex-direction: column;
-            margin-bottom: 30px;
-            height: 200px;
-            width: 100%;
-          }
-      
-          .nav-bar ul {
-            font-size: 1rem;
-            min-height: 60px;
-            margin: 0 auto;
-            width: 100%;
-            overflow: scroll;
-          }
-
-          .nav-bar li {
-            margin: 0 auto;
-          }
-
-          #logo {
-            margin: 0 auto;
-            margin-top: 20px;
-            margin-bottom: 10px;
-          }
-
-
-    /* ====== WELCOME SECTION (Mobile) ====== */
-      .welcome-message {
-        display: none;
-      }
-      
-      .welcome-p-mobile {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 20px 20px;
-        width: 80%;
-        height: auto;
-        border-radius: 30px;
-        box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
-        font-size: 1.2rem;
-        font-family: 'Work Sans', sans-serif;
-      }
-      
-      h1 {
-        font-size: 1.3rem;
-        border-bottom: none;
-          margin-bottom: 1rem;
-          color: #333;
-          border-bottom: 2px solid #e0e0e0;
-          padding-bottom: 0.5rem;
-          font-weight: 550;
-        }
-     
-    /* ====== CONTAINERS (Mobile) ====== */
-      .container1,
-      .container2 {
-        width: 80%;
-        flex-direction: column;
-      }
-
-      .container1 h1,
-      .container2 h1 {
-        text-align: center;
-      }
-
-      .container2 {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .container-wrap {
-        grid-template-columns: 1fr;
-        padding: 20px;
-      }
-      
-      /* ====== CHECK-IN-OUT (Mobile) ====== */
-      .check-in-out {
-        text-align: center;
-          box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
-          border-radius: 20px;
-          padding-top: 20px;
-          padding-bottom: 5px;
-      }
-      
-      .check-in-out li {
-        font-size: 1.1rem;
-      }
-
-       /* ====== WIFI SECTION (Mobile) ====== */
-      .container1 .wifi {
-          text-align: center;
-          box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
-          border-radius: 20px;
-          padding-top: 20px;
-          padding-bottom: 5px;
-          min-width: 100%;
-      }
-
-      .wifi h1 {
-        padding-right: 25px;
-      }
-
-      .wifi li {
-        font-size: 1.1rem;
-      }
-       
-       /* ====== IFRAME MAP (Mobile) ====== */
-      .location {
-        margin-top: 40px;
-      }
-  
-      iframe {
-        width: 100%;
-      }
-      
-    
-      /* ====== RECOMMENDATIONS - EMERGENCY SECTION (Mobile) ====== */
-      .rec, .emergency-contacts{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        flex-direction: center;
-        box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
-        border-radius: 20px;
-        padding-top: 20px;
-        padding-bottom: 5px;
-      }
-
-      .rec li {
-        font-size: 1.1rem;
-      }
-
-      .rec .hidden-link {
-        display: none;
-      }
-      
-      /* ====== TRANSPORTS (Mobile) ====== */
-      .transports {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        align-content: center;
-        flex-direction: center;
-        box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
-        border-radius: 20px;
-        padding: 0 5px;
-        padding-top: 20px;
-        padding-bottom: 5px;
-      }
-
-      .transports li {
-        font-size: 1.1rem;
-      }
-       
-      /* ====== CONTACT TOP ====== */
-       .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        align-content: center;
-        flex-direction: center;
-        box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
-        border-radius: 20px;
-        padding: 0 5px;
-        padding-top: 20px;
-        padding-bottom: 5px;
-        margin-bottom: 40px;
-      }
-      
-      .fa-phone {
-        margin-right: 10px!important;
-      }
-      .whatsapp-icon-top {
-        margin-right: 5px;
-      }
-
-      /* ====== HOUSE RULES MOBILE ====== */
-      .house-rules {
-        display: none;
-      }
-      
-      .mobile-house-rules {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        background-color: #fffbf4;
-        margin: 0 auto;
-        order: 5;
-        margin-top: 40px; 
-        padding: 10px 10px;
-        border-radius: 30px;
-      }
-  
-      .mobile-house-rules h1 {
-        width: 100%;
-        border-bottom: 2px solid #e0e0e0;
-      }
-  
-      .mobile-house-rules ul {
-        list-style-type: none;
-        font-size: 1.1rem;
-      }
-      
-      
-      span{
-        font-size: 1.3rem;
-        color: #e43232;
-        font-weight: 550;
-      }
-      
-
-      /* ====== CARDS (Mobile) ====== */
-      .card {
-        width: 90%;
-        height: auto;
-        margin: 20px auto;
-      }
-
-      .activities-card {
-        width: 90%;
-        max-height: 500px;
-        margin: 20px auto;
-      }
-    
-      .card-img {
-          height: auto;
-          aspect-ratio: 4 / 3; 
-        }
-  
-      .intro {
-        display: none;
-      }
-  
-      .text-mobile {
-        display: flex;
-        margin: 0 auto;
-        margin-top: 40px;
-        padding: 20px 20px;
-        width: 75%;
-        height: auto;
-        border-radius: 30px;
-        text-align: center;
-        align-items: center;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 1px 1px 3px rgba(0, 0, 1, 0.3);
-        font-size: 1.1rem;
-        font-family: 'Work Sans', sans-serif;
-      }
-    
-      .info {
-        font-size: 1rem;
-      }
-      
-      .map-link .wiki-link{
-        margin: 0;
-        padding: 0;
-      }
-  
-     
-       /* ====== FOOTER (Mobile) ====== */
-       .foot {
-        display: flex;
-        flex-direction: column;
-      }
-      
-      .footer-contacts {
-        order: 1;
-        margin-bottom: 15px;
-      }
-      
-      .footer-social {
-        order: 2;
-        display: flex;
-        justify-content: center;
-        margin-left: 15px;
-        margin-bottom: 19px;
-      }
-      
-      .app {
-        margin-left: 3px;
-      }
-
-      .footer-brand {
-        order: 3;
-        display: flex;
-        justify-content: center;       
-        align-items: center;          
-        text-align: center;
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 765px;
-        margin: 0 auto;
-      }
-    }
+  .back-to-top {
+    left: 93%;
+  }
+}
