@@ -485,16 +485,9 @@ a {
 
 @media only screen and (max-width: 768px) {
   .back-to-top {
-    display: block;
+    display: none;
   }
 }
-
-<script>
-  document.querySelector('.back-to-top').addEventListener('click', function(e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
 
 /* ========== FOOTER ========== */
 .foot {
