@@ -470,8 +470,10 @@ a {
 /* ========== UP ARROW ========== */
 .back-to-top {
   position: fixed;
-  left: 98%;
+  left: 85%;
   top: 90%;
+  display: none;
+  /z-index: 1000;
 }
 
 .back-to-top img {
@@ -479,21 +481,11 @@ a {
   height: 30px;
   max-width: 100%;
   max-height: 100%;
-  display: none;
 }
 
 @media only screen and (max-width: 768px) {
   .back-to-top {
-    position: fixed;
-    left: 85%;
-    top: 90%;
     display: block;
-  }
-
-  .back-to-top img {
-    display: block;
-    width: 30px;
-    height: 30px;
   }
 }
 
