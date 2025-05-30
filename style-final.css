@@ -470,7 +470,7 @@ a {
 /* ========== UP ARROW ========== */
 .back-to-top {
   position: fixed;
-  left: 85%;
+  left: 90%;
   top: 90%;
   display: none;
   /z-index: 1000;
@@ -488,6 +488,13 @@ a {
     display: block;
   }
 }
+
+<script>
+  document.querySelector('.back-to-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 
 /* ========== FOOTER ========== */
 .foot {
