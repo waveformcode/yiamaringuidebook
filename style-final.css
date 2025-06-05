@@ -473,7 +473,7 @@ a {
   left: 90%;
   top: 90%;
   display: none;
-  /z-index: 1000;
+  z-index: 1000;
 }
 
 .back-to-top img {
@@ -840,5 +840,11 @@ a {
     width: 100%;
     max-width: 765px;
     margin: 0 auto;
+  }
+}
+
+@media print {
+  body {
+    display: none !important;
   }
 }
