@@ -213,8 +213,59 @@ nav li a:hover {
   list-style-type: none;
 }
 
+/* ========== check-in--out-instructions ========== */
+.check-in-container,
+.check-out-info {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.check-in-text p,
+.check-out-info p {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  padding: 10px 20px;
+}
+
+.check-in-text h1 {
+  padding: 10px;
+}
+
+.check-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 500px;
+}
+
+.check-out-info img {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 50px;
+  border-radius: 500px;
+}
+
+.check-out-info li {
+  width: 100%;
+  max-width: 600px;
+}
+
+.check-out-info ul {
+  padding: 10px 20px;
+}
+
 .check-out-info a {
-  font-size: 2rem;
+  font-size: 1rem;
+  color: #4b71dc;
 }
 
 /* Top Right, Location */
@@ -431,7 +482,7 @@ h3 {
   font-size: 1rem;
   letter-spacing: 0.04rem;
   font-weight: 200;
-  color: #7792dc;
+  color: #4b71dc;
 }
 
 h1 i {
@@ -810,6 +861,17 @@ a {
   .map-link .wiki-link {
     margin: 0;
     padding: 0;
+  }
+
+  /* ====== FOOTER (Mobile) ====== */
+  .check-in-container,
+  .check-out-info {
+    flex-direction: column;
+  }
+
+  .check-in-container img,
+  .check-out-info img {
+    display: none;
   }
 
   /* ====== FOOTER (Mobile) ====== */
